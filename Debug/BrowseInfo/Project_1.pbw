@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "5",
+      "path": "C:\\Engineering courses\\EGFWD\\_workspace1\\Sprints_ARM_MC02\\src\\Appl\\Main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIO_Init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIO_Init(void)",
+    "location": {
+      "column": "9",
+      "line": "53",
+      "path": "C:\\Engineering courses\\EGFWD\\_workspace1\\Sprints_ARM_MC02\\src\\Mcal\\GPIO.c"
+    },
+    "name": "GPIO_Init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIO_Init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIO_Init(int)",
+    "location": {
+      "column": "6",
+      "line": "67",
+      "path": "C:\\Engineering courses\\EGFWD\\_workspace1\\Sprints_ARM_MC02\\src\\Mcal\\GPIO.c"
+    },
+    "name": "GPIO_Init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Pin_Set",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void Pin_Set(int)",
+    "location": {
+      "column": "6",
+      "line": "80",
+      "path": "C:\\Engineering courses\\EGFWD\\_workspace1\\Sprints_ARM_MC02\\src\\Mcal\\GPIO.c"
+    },
+    "name": "Pin_Set",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IntCrtl_Init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IntCrtl_Init(void)",
+    "location": {
+      "column": "6",
+      "line": "55",
+      "path": "C:\\Engineering courses\\EGFWD\\_workspace1\\Sprints_ARM_MC02\\src\\Mcal\\IntCtrl.c"
+    },
+    "name": "IntCrtl_Init",
+    "origin": "project_file",
+    "scope": null
+  }
+]

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>2219012302</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Appl\Main.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\Appl\Main.o</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Mcal\GPIO.c</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Mcal\Inc\GPIO.h</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\doc\HeaderFileTemplate.h</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Common\Std_Types.h</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Common\Compiler.h</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Common\Platform_Types.h</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Common\Mcu_Hw.h</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Common\TM4C123GH6PM.h</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Mcal\IntCtrl.c</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Mcal\Inc\IntCtrl.h</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Mcal\Inc\IntCtrl_Types.h</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Config\GPIO_Cfg.h</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Config\IntCtrl_Cfg.h</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Mcal\Inc\GPIO.c</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\src\Config\IntCtrl_Lcfg.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\Mcal\GPIO.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Mcal\IntCtrl.o</file>
+            <file>$PROJ_DIR$\Debug\Exe\Project_1.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\Config\IntCtrl_Lcfg.o</file>
+            <file>$PROJ_DIR$\Sprints_ARM_MC02\doc\SourceFileTemplate.c</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\Sprints_ARM_MC02\src\Appl\Main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Sprints_ARM_MC02\src\Mcal\GPIO.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Sprints_ARM_MC02\src\Mcal\IntCtrl.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Sprints_ARM_MC02\src\Config\IntCtrl_Lcfg.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 22</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

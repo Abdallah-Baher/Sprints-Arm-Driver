@@ -1,0 +1,71 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe" $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe" $flags
+
+rule MAKEBROWSE
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe" $flags
+
+rule PDBLINK
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe" $flags
+
+
+
+#Build steps
+build C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Appl\Main.xcl : COMPILER_XCL 
+  xclcommand = -source_file "C$:\Engineering$ courses\EGFWD\_workspace1\Sprints_ARM_MC02\src\Appl\Main.c" -xcl_file "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Appl\Main.xcl" -macro_file "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Appl\Main.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "C$:\Engineering$ courses\EGFWD\_workspace1\Sprints_ARM_MC02\src\Appl\Main.c" -o "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\Obj\Appl" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Appl\Main.tmp"
+  rspfile_name = C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Appl\Main.xcl.rsp
+
+build C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Config\IntCtrl_Lcfg.xcl : COMPILER_XCL 
+  xclcommand = -source_file "C$:\Engineering$ courses\EGFWD\_workspace1\Sprints_ARM_MC02\src\Config\IntCtrl_Lcfg.c" -xcl_file "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Config\IntCtrl_Lcfg.xcl" -macro_file "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Config\IntCtrl_Lcfg.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "C$:\Engineering$ courses\EGFWD\_workspace1\Sprints_ARM_MC02\src\Config\IntCtrl_Lcfg.c" -o "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\Obj\Config" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Config\IntCtrl_Lcfg.tmp"
+  rspfile_name = C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Config\IntCtrl_Lcfg.xcl.rsp
+
+build C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\GPIO.xcl : COMPILER_XCL 
+  xclcommand = -source_file "C$:\Engineering$ courses\EGFWD\_workspace1\Sprints_ARM_MC02\src\Mcal\GPIO.c" -xcl_file "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\GPIO.xcl" -macro_file "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\GPIO.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "C$:\Engineering$ courses\EGFWD\_workspace1\Sprints_ARM_MC02\src\Mcal\GPIO.c" -o "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\Obj\Mcal" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\GPIO.tmp"
+  rspfile_name = C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\GPIO.xcl.rsp
+
+build C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\IntCtrl.xcl : COMPILER_XCL 
+  xclcommand = -source_file "C$:\Engineering$ courses\EGFWD\_workspace1\Sprints_ARM_MC02\src\Mcal\IntCtrl.c" -xcl_file "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\IntCtrl.xcl" -macro_file "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\IntCtrl.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "C$:\Engineering$ courses\EGFWD\_workspace1\Sprints_ARM_MC02\src\Mcal\IntCtrl.c" -o "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\Obj\Mcal" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\IntCtrl.tmp"
+  rspfile_name = C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\IntCtrl.xcl.rsp
+
+build C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Appl\Main.pbi : INDEXER C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Appl\Main.xcl |  $
+C$:\Engineering$ courses\EGFWD\_workspace1\Sprints_ARM_MC02\src\Appl\Main.c
+  flags = "-out=C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Appl\Main.pbi" -f "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Appl\Main.xcl"
+
+build C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Config\IntCtrl_Lcfg.pbi : INDEXER C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Config\IntCtrl_Lcfg.xcl |  $
+C$:\Engineering$ courses\EGFWD\_workspace1\Sprints_ARM_MC02\src\Config\IntCtrl_Lcfg.c
+  flags = "-out=C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Config\IntCtrl_Lcfg.pbi" -f "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Config\IntCtrl_Lcfg.xcl"
+
+build C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\GPIO.pbi : INDEXER C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\GPIO.xcl |  $
+C$:\Engineering$ courses\EGFWD\_workspace1\Sprints_ARM_MC02\src\Mcal\GPIO.c
+  flags = "-out=C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\GPIO.pbi" -f "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\GPIO.xcl"
+
+build C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\IntCtrl.pbi : INDEXER C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\IntCtrl.xcl |  $
+C$:\Engineering$ courses\EGFWD\_workspace1\Sprints_ARM_MC02\src\Mcal\IntCtrl.c
+  flags = "-out=C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\IntCtrl.pbi" -f "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\IntCtrl.xcl"
+
+build C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Project_1.pbw : MAKEBROWSE C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Project_1.pbd
+  flags = "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Project_1.pbd" -output "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Project_1.pbw"
+
+build C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Project_1.pbd : PDBLINK C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Appl\Main.pbi |  $
+C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Config\IntCtrl_Lcfg.pbi $
+C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\GPIO.pbi $
+C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\IntCtrl.pbi
+  flags = -M "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Project_1.pbd" "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Appl\Main.pbi" "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Config\IntCtrl_Lcfg.pbi" "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\GPIO.pbi" "C$:\Engineering$ courses\EGFWD\_workspace1\Debug\BrowseInfo\Mcal\IntCtrl.pbi"
+
